@@ -1,0 +1,6 @@
+venv/*
+.idea/*
+__pycache__/*
+Database.db
+Configs/secure.json
+../Valorant API/.env

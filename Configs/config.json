@@ -1,0 +1,17 @@
+{
+  "prefix": "--",
+
+  "guildId": 732799784804417589,
+
+  "embed": {
+    "colour": "#f05f19",
+    "footer": {
+      "text": "RantBot | Programmed by Jelly#6161",
+      "url": "https://wallpaperaccess.com/full/4547484.jpg"
+    }
+  },
+  "main_guild": 557021698801664060,
+  "channel": 1134255011304570910,
+  "confidence": 0.5,
+  "staff": 557022261522071556
+}

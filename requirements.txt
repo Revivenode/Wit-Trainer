@@ -1,0 +1,6 @@
+git+https://github.com/Jelly-exe/discord-ext-base
+discord.py~=2.2.3
+requests==2.30.0
+python-dotenv~=1.0.0
+wit
+sqlalchemy
