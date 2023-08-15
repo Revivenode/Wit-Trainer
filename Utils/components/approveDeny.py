@@ -7,7 +7,7 @@ class ApproveDenyView(discord.ui.View):
 
         self.add_item(ApproveButton(message, intent, disabled))
         self.add_item(DenyButton(message, intent, disabled))
-        self.add_item(IgnoreButton(disabled))
+        self.add_item(IgnoreButton(disabled, intent, disabled))
 
 
 class ApproveButton(discord.ui.Button):
