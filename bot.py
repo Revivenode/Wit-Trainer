@@ -2,7 +2,9 @@ import json
 import os
 from typing import List
 
+import discord
 import requests
+from discord.app_commands import AppCommandError
 from discord.ext.base.bot import BaseBot
 from discord.ext.base.config import config
 from dotenv import load_dotenv
@@ -36,3 +38,7 @@ class RantBot(BaseBot):
         for i in os.listdir('Cogs'):
             if i.endswith('.py') and i not in dontLoad:
                 self.initial_extensions.append(f'Cogs.{i[:-3]}')
+
+    @staticmethod
+    async def on_slash_command_error(interaction: discord.Interaction, error: AppCommandError):
+        return
