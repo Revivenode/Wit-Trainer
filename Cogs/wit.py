@@ -11,6 +11,9 @@ class WitAI(commands.Cog):
 
     @app_commands.command(description="Test Command")
     async def test(self, interaction: discord.Interaction):
+        if interaction.user.id != 278548721778688010:
+            return
+
         await interaction.response.send_message(view=ApproveDenyView("Mess", "Inte", "Conf", testing=True))
 
     @commands.Cog.listener(name="on_message")
