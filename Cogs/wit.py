@@ -51,7 +51,7 @@ class WitAI(commands.Cog):
             if flag:
                 channel = self.client.get_channel(self.client._config["channel"])
                 confidence = f'{intent["confidence"]*100:2f}%'
-                await channel.send(f'Should *{message.content}* trigger the intent `{intent["name"]}`?\n\nConfidence: {confidence}', view=ApproveDenyView(message.content, intent["name"], confidence))
+                await channel.send(f'Message: `{message.content}`\n\nIntent: `{intent["name"]}`\n\nConfidence: `{confidence}`', view=ApproveDenyView(message.content, intent["name"], confidence))
 
 
 async def setup(client):
