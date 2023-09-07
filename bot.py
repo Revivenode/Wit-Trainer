@@ -16,11 +16,11 @@ from Utils.components.approveDeny import ApproveDenyView
 
 class RantBot(BaseBot):
     def __init__(self):
-        super().__init__(devMode=False, status=("Caching", "with the devs!"))
+        super().__init__(dev_mode=False, status=("Caching", "with the devs!"))
 
         load_dotenv()
 
-        self.wit_client = Wit(self.secure[self.runType]["wit"])
+        self.wit_client = Wit(self.secure[self.run_type]["wit"])
 
     def get_config(self):
         with open("Configs/config.json", encoding='utf8') as file:
